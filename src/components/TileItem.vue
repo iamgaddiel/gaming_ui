@@ -58,12 +58,8 @@ button:hover {
 @media(min-width: 768px) {
     .tile_item {
         width: 30.33%;
-        height: 12vh;
+        height: 20vh;
         overflow: hidden;
-    }
-
-    h3 {
-        display: none;
     }
 
     .options {

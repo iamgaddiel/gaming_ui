@@ -48,6 +48,11 @@ header {
 }
 
 @media(min-width: 576px) {
+    .hero__section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     header {
         height: 30vh;
     }
