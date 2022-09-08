@@ -20,14 +20,16 @@ import Tab from './components/Tab.vue';
 
   <section class="wallet">
     <div class="lhs">
-      <div class="lhs_img">
-        <img :src="wallet" />
-      </div>
-      <div class="lhs_txt">
-        <span>Ken <img :src="crown" class="small_icon" />
-          <span class="gold_text">7</span>
-        </span>
-        <span>₦<span class="gold_text">12121233</span></span>
+      <div class="lhs_inner">
+        <div class="lhs_img">
+          <img :src="wallet" />
+        </div>
+        <div class="lhs_txt">
+          <span>Ken <img :src="crown" class="small_icon" />
+            <span class="gold_text">7</span>
+          </span>
+          <span>₦<span class="gold_text">12121233</span></span>
+        </div>
       </div>
     </div>
 
@@ -55,6 +57,7 @@ import Tab from './components/Tab.vue';
   width: 100%;
   padding: 5px 0px;
   margin: 10px 0px;
+  align-items: center;
 }
 
 .lhs,
@@ -62,10 +65,13 @@ import Tab from './components/Tab.vue';
   width: 50%;
 }
 
-.lhs {
+.lhs{
+  border-right: 1px solid #bbb;
+  margin: 10px 0;
+}
+.lhs_inner {
   display: flex;
   align-items: center;
-  border-right: 1px solid #bbb;
 }
 
 .lhs_img {
@@ -126,6 +132,11 @@ main {
     display: flex;
     flex-direction: column;
   }
+
+  .lhs_inner {
+    margin: auto;
+  width: 30%;
+}
 
   .wallet {
     justify-content: space-evenly;
