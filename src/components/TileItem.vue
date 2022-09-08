@@ -46,7 +46,7 @@ button {
     background-color: rgba(0, 0, 0, 0.217);
     border: 2px #fff solid;
     color: #fff;
-    padding: 12px;
+    padding: 12px 10px;
     width: 20vw;
 }
 
@@ -57,9 +57,10 @@ button:hover {
 
 @media(min-width: 768px) {
     .tile_item {
-        width: 30.33%;
-        height: 20vh;
+        width: 45%;
+        height: 30vh;
         overflow: hidden;
+        margin: 20px;
     }
 
     .options {

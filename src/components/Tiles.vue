@@ -26,7 +26,7 @@ import smile from '../assets/images/smile.jpeg';
 
 @media(min-width: 768px) {
     .tiles{
-        padding: 0;
+        padding: 30px 20px;
         justify-content: space-between;
         flex-wrap: wrap;
         flex-direction: row;
